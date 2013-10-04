@@ -1,5 +1,5 @@
 #OK
-#SQL= select p.* from MDR1..FOFParticles f, MDR1..particles p where f.fofParticleId like '85004063257_%' and f.particleId = p.particleId order by f.fofParticleId asc
+#SQL=select p.* from MDR1..FOFParticles f, MDR1..particles p where f.fofParticleId like '85004063257_%' and f.particleId = p.particleId order by f.fofParticleId asc
 #MAXROWS UNLIMITED
 #QUERYTIMEOUT 2400 sec
 #DATE 2013-10-04 16:13:03.293 CEST
