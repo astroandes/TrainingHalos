@@ -2,8 +2,8 @@
 #SQL= select p.* from MDR1..FOFParticles f, MDR1..particles p where f.fofParticleId like '85002137130_%' and f.particleId = p.particleId order by f.fofParticleId asc
 #MAXROWS UNLIMITED
 #QUERYTIMEOUT 2400 sec
-#DATE 2013-10-04 16:08:55.430 CEST
-#QUERYTIME 45 millisec
+#DATE 2013-10-08 15:29:07.988 CEST
+#QUERYTIME 31 millisec
 #COLUMN 1 name=particleId JDBC_TYPE=-5 JDBC_TYPENAME=bigint
 #COLUMN 2 name=snapnum JDBC_TYPE=5 JDBC_TYPENAME=smallint
 #COLUMN 3 name=x JDBC_TYPE=7 JDBC_TYPENAME=real
