@@ -1,0 +1,29 @@
+#OK
+#SQL= select * from MDR1..BDMVprof where bdmId = 8506817002    order by Rbin
+#MAXROWS UNLIMITED
+#QUERYTIMEOUT 2400 sec
+#DATE 2013-10-30 14:57:35.299 CET
+#QUERYTIME 4 millisec
+#COLUMN 1 name=bdmProfileId JDBC_TYPE=-5 JDBC_TYPENAME=bigint
+#COLUMN 2 name=bdmId JDBC_TYPE=-5 JDBC_TYPENAME=bigint
+#COLUMN 3 name=snapnum JDBC_TYPE=5 JDBC_TYPENAME=smallint
+#COLUMN 4 name=NinCat JDBC_TYPE=-5 JDBC_TYPENAME=bigint
+#COLUMN 5 name=R_Rvir JDBC_TYPE=7 JDBC_TYPENAME=real
+#COLUMN 6 name=Rbin JDBC_TYPE=7 JDBC_TYPENAME=real
+#COLUMN 7 name=np JDBC_TYPE=4 JDBC_TYPENAME=int
+#COLUMN 8 name=mass JDBC_TYPE=7 JDBC_TYPENAME=real
+#COLUMN 9 name=dens JDBC_TYPE=7 JDBC_TYPENAME=real
+#COLUMN 10 name=Vcirc JDBC_TYPE=7 JDBC_TYPENAME=real
+#COLUMN 11 name=VpropRms JDBC_TYPE=7 JDBC_TYPENAME=real
+#COLUMN 12 name=Vrad JDBC_TYPE=7 JDBC_TYPENAME=real
+#COLUMN 13 name=VradRms JDBC_TYPE=7 JDBC_TYPENAME=real
+#COLUMN 14 name=boundR_Rvir JDBC_TYPE=7 JDBC_TYPENAME=real
+#COLUMN 15 name=boundNp JDBC_TYPE=4 JDBC_TYPENAME=int
+#COLUMN 16 name=boundMass JDBC_TYPE=7 JDBC_TYPENAME=real
+#COLUMN 17 name=boundDens JDBC_TYPE=7 JDBC_TYPENAME=real
+#COLUMN 18 name=boundVcirc JDBC_TYPE=7 JDBC_TYPENAME=real
+#COLUMN 19 name=boundVcircRms JDBC_TYPE=7 JDBC_TYPENAME=real
+#COLUMN 20 name=boundVrad JDBC_TYPE=7 JDBC_TYPENAME=real
+#COLUMN 21 name=boundVradRms JDBC_TYPE=7 JDBC_TYPENAME=real
+bdmProfileId,bdmId,snapnum,NinCat,R_Rvir,Rbin,np,mass,dens,Vcirc,VpropRms,Vrad,VradRms,boundR_Rvir,boundNp,boundMass,boundDens,boundVcirc,boundVcircRms,boundVrad,boundVradRms
+#OK
