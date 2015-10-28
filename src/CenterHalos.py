@@ -1,9 +1,9 @@
 import numpy as np, sys, os
 
+rho0 = (2048.0/1000.0)**3
+crit = 740.0
+
 path = sys.argv[1]
-
-
-
 filenames = os.listdir(path)
 filenum = len(filenames)
 
@@ -29,12 +29,30 @@ for i in range(filenum):
 
     potential = np.loadtxt(open(potential_name, 'r'))
     maximum = np.argmax(potential)
+
     x_center,y_center,z_center = x[maximum],y[maximum],z[maximum]
     x -= x_center
     y -= y_center
     z -= z_center
-    odata = np.dstack((x,y,z))[0]
-    odata = np.sort(odata)
+    r = np.sqrt(x*x+y*y+z*z)
 
+    indices = np.argsort(r)
+    x = x[indices]
+    y = y[indices]
+    z = z[indices]
+    r = r[indices]
+
+    mass   = np.arange(1,n_points)
+    radius = r[1:]
+    dens = mass/((4.0/3.0)*np.pi*(radius**3))
+    
+    diff = np.abs(dens-rho0*crit)
+    vir_index = np.argmin(diff)+1
+
+    if vir_index == 1:
+        vir_index = -1
+    
+    odata = np.dstack((x,y,z))[0,:vir_index]
+    
     np.savetxt('./CenteredHalos/'+filename,odata,fmt='%lf,%lf,%lf')
     os.system('rm '+positions_name+' '+potential_name)
